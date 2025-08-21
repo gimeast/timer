@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>타이머 제작 실습</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img src="./public/images/weniv-logo.svg" alt="위니브 로고" />
+            </h1>
+        </header>
+        <main>
+            <section>
+                <h2>TIMER</h2>
+                <div class="line"></div>
+                <div class="line2"></div>
+
+                <div class="timer-wrap">
+                    <div class="hrs">
+                        <span>HRS</span>
+                        <div class="box hrs-box">
+                            <input
+                                class="timer timer-hrs"
+                                type="text"
+                                value="00"
+                                maxlength="2"
+                            />
+                        </div>
+                    </div>
+                    <div class="min">
+                        <span>MIN</span>
+                        <div class="box min-box">
+                            <input
+                                class="timer timer-min"
+                                type="text"
+                                value="00"
+                                maxlength="2"
+                            />
+                        </div>
+                    </div>
+                    <div class="sec">
+                        <span>SEC</span>
+                        <div class="box sec-box">
+                            <input
+                                class="timer timer-sec"
+                                type="text"
+                                value="00"
+                                maxlength="2"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <button class="start-btn">
+                        <img
+                            src="public/images/icon/start-disabled.png"
+                            alt="시작버튼"
+                        />
+                    </button>
+                    <button class="reset-btn">
+                        <img
+                            src="public/images/icon/reset-disabled.png"
+                            alt="초기화버튼"
+                        />
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer>ⓒ WENIV Corp.</footer>
+
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

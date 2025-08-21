@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+        format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 10px;
+    font-family: Pretendard, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: radial-gradient(
+            96.74% 276.79% at 3.59% 5.28%,
+            #f0f4ff 0%,
+            #a5b6ee 100%
+        )
+        no-repeat;
+
+    h1 > img {
+        width: 244px;
+        height: 48px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 60px;
+    width: 400px;
+    height: 360px;
+    border-radius: 16px;
+    background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%)
+        no-repeat;
+    box-shadow: 20px 20px 60px 10px #374b7c66;
+
+    h2 {
+        margin-top: 48px;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .line {
+        width: 312px;
+        height: 1px;
+
+        background-color: #3d538a;
+    }
+    .line2 {
+        width: 312px;
+        height: 1px;
+        background-color: #5b75b4;
+    }
+
+    .timer-wrap {
+        display: flex;
+        gap: 22px;
+        justify-content: center;
+
+        .hrs,
+        .min,
+        .sec {
+            position: relative;
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: #a5b6ee;
+            }
+            .box {
+                margin-top: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border: 1px solid #354971;
+                background: linear-gradient(314.28deg, #304577 0%, #4c65a0 83%);
+
+                width: 80px;
+                height: 80px;
+                border-radius: 4px;
+                color: #fff;
+
+                .timer {
+                    width: 44px;
+                    border: none;
+                    background: none;
+                    color: #fff;
+                    font-size: 4rem;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+        }
+
+        .hrs::after,
+        .min::after {
+            content: "";
+            position: absolute;
+            width: 6px;
+            height: 26px;
+            top: 50px;
+            right: -15px;
+            background-image: url("public/images/icon/dot.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        gap: 12px;
+
+        .start-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .reset-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            position: relative;
+            border: none;
+            border-radius: 50px;
+            width: 112px;
+            height: 48px;
+            background: #324577;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    margin-top: 6rem;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #8596bf;
+}
